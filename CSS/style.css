@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 #container {
@@ -18,17 +19,159 @@ body {
     margin-top: 30px;
 }
 
+/* SLIDER */
+
+
+
+
+.containerSlide{
+    
+    width: 450px;
+    height: 640px;
+    overflow: hidden;
+
+}
+
+#celulares{
+    
+    position: relative;
+    
+}
+
+.lista{
+    
+    padding: 0px;
+    width: 400%;
+  
+
+}
+
+.screenshot{
+    
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 100%;
+    list-style: none;
+    z-index: 999;
+}
+
+#fade1{
+    
+    animation: fade1 8s infinite;
+    animation-direction: alternate;
+}
+
+#fade2{
+    
+    animation: fade2 8s infinite;
+    animation-direction: alternate;
+}
+
+#fade3{
+    
+    animation: fade3 8s infinite;
+    animation-direction: alternate;
+}
+
+#fade4{
+    
+    animation: fade4 8s infinite;
+    animation-direction: alternate;
+}
+
+#fade5{
+    
+    animation: fade5 8s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade1{
+                
+                0%{ opacity: 1;}
+                
+                25%{ opacity: 0}
+                
+                50%{ opacity: 0}
+              
+                75%{ opacity: 0}
+                
+                100%{ opacity: 1}
+                
+                
+            }
+
+
+@keyframes fade2{
+                
+                0%{ opacity: 0;}
+                
+                25%{ opacity: 1}
+              
+                50%{ opacity: 0}
+              
+                75%{ opacity: 0}
+                
+                100%{ opacity: 0}
+                
+                
+            }
+
+@keyframes fade3{
+                
+                0%{ opacity: 0;}
+                
+                25%{ opacity: 0}
+              
+                50%{ opacity: 1}
+              
+                75%{ opacity: 0}
+                
+                100%{ opacity: 0}
+                
+                
+            }
+
+
+@keyframes fade4{
+                
+                0%{ opacity: 0;}
+                
+                25%{ opacity: 0}
+              
+                50%{ opacity: 0}
+              
+                75%{ opacity: 1}
+                
+                100%{ opacity: 0}
+                
+                
+            }
+
+
+@keyframes fade5{
+                
+                0%{ opacity: 0;}
+                
+                25%{ opacity: 0}
+              
+                50%{ opacity: 0}
+              
+                75%{ opacity: 0}
+                
+                100%{ opacity: 1}
+                
+                
+            }
+
+
+
 #caixaImg {
     width: 500px;
     height: 700px;
     /* border: solid 1px black; */
     float: left;
     /* background-color: currentColor; */
-}
-
-#caixaImg img {
-    width: 500px;
-    height: 650px;
 }
 
 #caixaPrincipal {
@@ -90,7 +233,9 @@ body {
     border: solid 0px #00000055;
     background-color: #0095f688;
     color: #ffffff;
+    cursor: pointer;
 }
+
 
 #caixaPrincipal h2 {
     color: #00000090;
@@ -120,6 +265,7 @@ body {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 #entrarComFacebook {
@@ -138,6 +284,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     float: left;
+    cursor: pointer;
 }
 
 #entrarComFacebook img {
@@ -146,7 +293,9 @@ body {
     float: left;
     margin-left: 90px;
     margin-right: 5px;
+    
 }
+
 
 #entrarComFacebook h2 {
     font-size: 12px;
@@ -154,6 +303,15 @@ body {
     margin-top: 40px;
     color: #00376b;
     clear: both;
+    cursor: pointer;
+}
+
+.enterFacebook:hover{
+    cursor: pointer;
+}
+
+.forgotPassword:hover{
+    
     cursor: pointer;
 }
 
@@ -166,7 +324,28 @@ body {
 #cadastre {
     color: steelblue;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.aplicativoFrase{
+    
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.obtenhaOApp{
+    
+    display: flex;
+}
+
+.obtenhaOApp img{
+    
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
 
 footer {
     width: 100%;
@@ -177,17 +356,22 @@ footer {
 
 #footerContainer {
     width: 1300px;
-    height: inherit;
+    height: 50px;
     /* background-color: #ff2; */
     margin: 0 auto;
     font-size: 9px;
     text-transform: uppercase;
+    
+    padding: 20px;
+    box-sizing: border-box
 }
 
 #footerContainer h2 {
     float: left;
     margin-right: 12px;
     color: #00376b;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 #footerContainer h1 {
@@ -196,4 +380,5 @@ footer {
     color: #00000090;
     letter-spacing: 0.1px;
     font-weight: 400;
+    
 }
